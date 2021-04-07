@@ -28,4 +28,10 @@ let point: {x: number; y: number} = {
   y: 20
 }
 
-//
+//Functions
+//first parenthesis after the variable name is the annotation and assigns value to variable and after arrow is what is expected to be returned. After the first = starts the actual function
+const logNumber: (i: number) => void = (i: number) =>{
+  console.log(i)
+}
+
+//if all annotations are deleted, the computer will use inference to assign value to variables
