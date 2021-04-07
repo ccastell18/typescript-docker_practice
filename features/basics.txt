@@ -6,3 +6,8 @@ Object Types = functions, arrays, classes, objects
 
 Types are used by typescript compiler to analyze our code for errors
 Types allow other engineers to understand what values are flowing around our codebase
+
+
+Type Annotations + Type Inference
+Type Annotations = code we add to tell Typescript what type of value a variable will refer to
+Type Inference = Typescript tries to figure out what type of value a variable refers to
