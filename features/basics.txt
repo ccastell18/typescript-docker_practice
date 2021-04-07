@@ -1,0 +1,8 @@
+Type = easy way to refer to the different properties and functions that a value has
+value = anything that can be assigned to a variable.
+
+Primitive Types- numbers, booleans, void, undefined, string, symbol, null
+Object Types = functions, arrays, classes, objects
+
+Types are used by typescript compiler to analyze our code for errors
+Types allow other engineers to understand what values are flowing around our codebase
