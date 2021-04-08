@@ -16,5 +16,6 @@ variable declaration         variable initialization
     const color        =              'red'
 
 
-When to use Annotations
-1) Function that returns the 'any' type
+Type annotations for functions = Code we add to tell Typescript what type of arguments a function will receive and what type of values it will returns
+
+Type inference for functions = Typescript tries to figure out what type of value a function will return 
