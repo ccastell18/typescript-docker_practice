@@ -14,3 +14,7 @@ Type Inference = Typescript tries to figure out what type of value a variable re
 
 variable declaration         variable initialization
     const color        =              'red'
+
+
+When to use Annotations
+1) Function that returns the 'any' type
