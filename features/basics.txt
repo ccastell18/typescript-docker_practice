@@ -30,3 +30,6 @@ Flexible - arrays can still contain multiple different types
 
 tuples vs arrays
 tuple- array like structure where each element represents some property of a record
+
+Interfaces
+interfaces - creates a new type, describing the property names and value types of objects
