@@ -33,3 +33,11 @@ tuple- array like structure where each element represents some property of a rec
 
 Interfaces
 interfaces - creates a new type, describing the property names and value types of objects
+
+Classes
+classses = blueprint to create an object with some fields(values) and methods(functions) to represent a 'thing'
+
+class modifiers
+public - can be called anywhere and anytime
+private - can only be called by other methods in this class
+protected - can be called by other methods in this class or other methods in child classes
