@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-new google.maps.Map(document.getElementById('map'), {
+var map = new google.maps.Map(document.getElementById('map'), {
   zoom: 1,
   center: {
     lat: 0,
