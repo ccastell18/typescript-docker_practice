@@ -136937,7 +136937,7 @@ exports.Company = Company;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.CustomMap = void 0;
+exports.CustomMap = void 0; //interface is a gatekeeper to methods. An interface can limit the info allowed in method
 
 var CustomMap =
 /** @class */
@@ -136950,24 +136950,16 @@ function () {
         lng: 0
       }
     });
-  }
+  } //can only refer to each class if they have the same property. (ex .lat, lng)
+  //problem: not scalable
 
-  CustomMap.prototype.addUserMarker = function (user) {
+
+  CustomMap.prototype.addMarker = function (mappable) {
     new google.maps.Marker({
       map: this.googleMap,
       position: {
-        lat: user.location.lat,
-        lng: user.location.lng
-      }
-    });
-  };
-
-  CustomMap.prototype.addCompanyMarker = function (company) {
-    new google.maps.Marker({
-      map: this.googleMap,
-      position: {
-        lat: company.location.lat,
-        lng: company.location.lng
+        lat: mappable.location.lat,
+        lng: mappable.location.lng
       }
     });
   };
