@@ -7,7 +7,7 @@ Docker Client - Tool that we are going to issue commands to
 Docker Server - Tool that is responsible for creating images, running containers, etc.
 
 Steps a command goes through
-use docker run ______
+use docker run ______ creates and starts a container
 it will put command in Docker Client
 The Client will check the server.
 It will check the image cache to see if we have a local image.
@@ -30,3 +30,22 @@ The image will have a File System Snapshot and a startup command.
 when the command is run, the hard drive will portion out space for the container
 The snapshot will be placed in that portion of the hard drive.
 It will take an instance of the process and move it as the running process and use the resources alloted into the container.
+
+Adding an Exclamation point after a command will override default command.
+
+-docker ps will list all open containers
+-docker ps --all will list all containers that have been used.
+-docker start -a will start a container if you have the container id
+-docker system prune will clear the image cache
+-docker logs <container id> will show what was executed when created.
+-docker stop <container id> will send SIGTERM which will shutdown on it's own time.
+-docker kill <container id> will send SIGKILL which will stop automatically
+-docker exec -it <container id> <command> to run another command in a running container
+- -i connects to the standard in channel
+- -t formats the text.
+- -sh opens a shell inside of the container.
+
+
+STDIN- each command has a standard in channel to communicate with the process
+STDOUT- Has a standard out channel which will send info to screen.
+STDERR - Sends error messages
