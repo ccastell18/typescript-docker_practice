@@ -1,0 +1,32 @@
+Docker
+
+Image is a single file with all the dependencies and config required to run a program
+Container is an instance of an image. Runs a program.
+
+Docker Client - Tool that we are going to issue commands to
+Docker Server - Tool that is responsible for creating images, running containers, etc.
+
+Steps a command goes through
+use docker run ______
+it will put command in Docker Client
+The Client will check the server.
+It will check the image cache to see if we have a local image.
+If not, it will check Docker Hub (A free site) to see if it has an image that was requested
+It moves image from Hub to image cache.  
+The image can now create a container to run the program.
+
+Container
+Programs run on the computer
+they make system calls
+It goes into a KERNAL to govern access to CPU, Memory, etc.
+
+Namespacing - isolating resources per process or group of processes(processes, network, user, hostnames, etc)
+Control Groups (cgroups)- Limit amount of resources used per process(Memory, Network Bandwith, CPU Usage, etc)
+both are exclusive to Linux. Only running on mac because it created a linux kernal. 
+
+A container makes a system call to the KERNAL and it will make a portion of each made available to the process
+
+The image will have a File System Snapshot and a startup command.  
+when the command is run, the hard drive will portion out space for the container
+The snapshot will be placed in that portion of the hard drive.
+It will take an instance of the process and move it as the running process and use the resources alloted into the container.
