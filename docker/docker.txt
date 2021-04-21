@@ -49,3 +49,12 @@ Adding an Exclamation point after a command will override default command.
 STDIN- each command has a standard in channel to communicate with the process
 STDOUT- Has a standard out channel which will send info to screen.
 STDERR - Sends error messages
+
+Dockerfile - configuration to define how our container should behave
+
+Dockerfile --> Docker Client --> Docker Server --> Usable Image 
+
+Create a Dockerfile
+-specify base image
+-run some commands to install additional Programs
+-specify a command to run on container startup 
