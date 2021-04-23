@@ -8,6 +8,7 @@ WORKDIR /usr/app
 #install dependencies
 COPY ./package.json ./
 RUN npm install
+#adding COPY ././ again after the RUN wil cache the previous commands. Any changes will not make the entire program reinstall
 COPY ./ ./
 
 #default command
