@@ -58,3 +58,9 @@ Create a Dockerfile
 -specify base image
 -run some commands to install additional Programs
 -specify a command to run on container startup 
+
+Port mapping
+#the container runs locally. It needs instructions to show up on a localhost network port.
+#maps incoming information into the container.
+
+docker run -p <port #> : <port # inside container> <image id>
