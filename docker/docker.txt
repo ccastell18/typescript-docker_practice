@@ -64,3 +64,7 @@ Port mapping
 #maps incoming information into the container.
 
 docker run -p <port #> : <port # inside container> <image id>
+
+WORKDIR
+puts all added files from local machine into a work directory so it does not override a container file
+WORKDIR /usr/app
